@@ -1,6 +1,9 @@
+import os
 from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def Youtube_Downloader():
+    update1 = os.system('python -m pip install --upgrade pip')
+    update2 = os.system('pip install --upgrade pytubefix')
+    return f'{update1}, {update2}'
