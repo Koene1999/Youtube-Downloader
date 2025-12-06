@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Form</title>
+</head>
+<body>
+    <h2>Youtube Downloader</h2>
+
+    <form action="/download" method="POST">
+
+        <!-- Text input -->
+        <label for="url">URL:</label><br>
+        <input type="text" id="url" name="url" required><br><br>
+
+        <!-- Group 1 (only one option selectable) -->
+        <fieldset>
+            <legend>Video or Audio?</legend>
+
+            <label>
+                <input type="radio" name="media" value="video" required>
+                Video
+            </label><br>
+
+            <label>
+                <input type="radio" name="media" value="audio">
+                Audio
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Group 2 (only one option selectable) -->
+        <fieldset>
+            <legend>Filetype:</legend>
+
+            <label>
+                <input type="radio" name="filetype" value="mp3" required>
+                mp3
+            </label><br>
+
+            <label>
+                <input type="radio" name="filetype" value="wav">
+                wav
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Submit button -->
+        <button type="Continue">Continue</button>
+
+    </form>
+</body>
+</html>
